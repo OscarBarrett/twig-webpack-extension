@@ -2,7 +2,9 @@
 
 namespace Fullpipe\TwigWebpackExtension\TokenParser;
 
-abstract class EntryTokenParser extends \Twig_TokenParser
+use Twig\TokenParser\AbstractTokenParser;
+
+abstract class EntryTokenParser extends AbstractTokenParser
 {
     protected $manifestFile;
     protected $publicPath;

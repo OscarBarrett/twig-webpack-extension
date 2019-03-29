@@ -2,10 +2,12 @@
 
 namespace Fullpipe\TwigWebpackExtension;
 
+use Twig\Extension\AbstractExtension;
+
 use Fullpipe\TwigWebpackExtension\TokenParser\EntryTokenParserCss;
 use Fullpipe\TwigWebpackExtension\TokenParser\EntryTokenParserJs;
 
-class WebpackExtension extends \Twig_Extension
+class WebpackExtension extends AbstractExtension
 {
     protected $manifestFile;
     protected $publicPathJs;
